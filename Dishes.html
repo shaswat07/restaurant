@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+
+       
+        .header {
+            background-color: #f1f1f1;
+            padding: 20px;
+            text-align: center;
+        }
+
+       
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+            .topnav a {
+                float: left;
+                display: block;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+               
+                .topnav a:hover {
+                    background-color: #ddd;
+                    color: black;
+                }
+
+      
+        .column {
+            float: left;
+            padding: 10px;
+        }
+
+           
+            .column.side {
+                width: 25%;
+            }
+
+           
+            .column.middle {
+                width: 50%;
+            }
+
+       
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        
+        @media screen and (max-width: 600px) {
+            .column.side, .column.middle {
+                width: 100%;
+            }
+        }
+
+       
+        .footer {
+            background-color: #f1f1f1;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+    <title>Dishes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap (keep these links in the current order) -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!--Stylesheet link-->
+    <link rel="stylesheet" href="site.css" />
+    <link href="https://fonts.googleapis.com/css?family=Niconne" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a class="navbar-brand" href="Index.html">Canberra Restaurants</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="topnav">
+                <a href="http://localhost:61722/Index.html">Canberra Reastaurants</a>
+                <a href="http://localhost:61722/Restaurants.html">Resturant</a>
+                <a href="http://localhost:61722/Dishes.html">Dishes</a>
+                <a href="http://localhost:61722/Cuisines.html">Cuisines</a>
+                <a href="http://localhost:61722/Prices.html">Prices</a>
+                <a href="http://localhost:61722/Locations.html">Locations</a>
+                <a href="http://localhost:61722/ContactAbout.html">Contact$About</a>
+            </div>
+        </nav>
+    </header>
+    <div class="bgis">
+        <div class="bgc bgs">
+            <div id="introBox">Canberra Restaurants</div>
+            <div id="quote"><h1>Dishes</h1></div>
+
+        </div>
+    </div>
+    <p class="aboutText">
+        Hungry for a particular dish? See the catagories below to see which restaurants serve the dish you crave.<br>
+        If you want a more in depth look at the dishes available, click on a restaurant to be sent to its menu.<br><br />
+    </p>
+    <div class="container">
+        <div class="row centre">
+            <div class="col-md-3 col-sm-6 p10">
+                <h2 class="g">Pasta</h2>
+                <p>
+                    <a id="b" href="https://bellucis.com.au/_pdf/manuka/Main_May_20.pdf">Belluci’s Italian</a>
+                    <br><a id="b" href="https://static1.squarespace.com/static/5806e22ec534a5bab1dbc80f/t/5f506925d777713b49fb2796/1599105319265/Sample+Menu+2020.09.01.pdf">Italian and Sons</a>
+                </p>
+            </div>
+            <div class="col-md-3 col-sm-6 p10">
+                <h2 class="g">Seafood</h2>
+                <p>
+                    <a id="b" href="https://bellucis.com.au/_pdf/manuka/Main_May_20.pdf">Belluci’s Italian</a>
+                    <br><a id="b" href="https://www.bluginger.com.au/menu/">Blu Ginger</a>
+                    <br><a id="b" href="https://chairmangroup.com.au/wp-content/uploads/2020/05/Chairman-TA-MAY-20.pdf">Chairman and Yip</a>
+                    <br><a id="b" href="https://e605f089-542e-47cf-a5da-c5a206f8a8ce.filesusr.com/ugd/a65258_887e21297776436bbc1f8624931f2940.pdf?index=true">Dickson Asian Noodle House</a>
+                    <br><a id="b" href="https://static1.squarespace.com/static/5806e22ec534a5bab1dbc80f/t/5f506925d777713b49fb2796/1599105319265/Sample+Menu+2020.09.01.pdf">Italian and Sons</a>
+                    <br><a id="b" href="https://jewelofindia.com.au/pdfs/Jewel_Dine_in_Menu_June_15.pdf">Jewel of India</a>
+                </p>
+            </div>
+            <div class="col-md-3 col-sm-6 p10">
+                <h2 class="g">Curry</h2>
+                <p>
+                    <a id="b" href="https://www.bluginger.com.au/menu/">Blu Ginger</a>
+                    <br><a id="b" href="https://e605f089-542e-47cf-a5da-c5a206f8a8ce.filesusr.com/ugd/a65258_887e21297776436bbc1f8624931f2940.pdf?index=true">Dickson Asian Noodle House</a>
+                    <br><a id="b" href="https://jewelofindia.com.au/pdfs/Jewel_Dine_in_Menu_June_15.pdf">Jewel of India</a>
+                </p>
+            </div>
+            <div class="col-md-3 col-sm-6 p10">
+                <h2 class="g">Stir-Fry</h2>
+                <p>
+                    <a id="b" href="https://chairmangroup.com.au/wp-content/uploads/2020/05/Chairman-TA-MAY-20.pdf">Chairman and Yip</a>
+                    <br><a id="b" href="https://e605f089-542e-47cf-a5da-c5a206f8a8ce.filesusr.com/ugd/a65258_887e21297776436bbc1f8624931f2940.pdf?index=true">Dickson Asian Noodle House</a>
+                    <br><a id="b" href="https://jewelofindia.com.au/pdfs/Jewel_Dine_in_Menu_June_15.pdf">Jewel of India</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer><hr> &copy;2020 - Canberra Restaurants. All Rights Reserved.</footer>
+</body>
+</html>
